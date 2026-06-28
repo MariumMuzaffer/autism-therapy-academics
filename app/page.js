@@ -246,7 +246,7 @@ function HomeHero() {
                 </div>
 
                 {/* Floating badge */}
-                <motion.div
+                {/* <motion.div
                   variants={fadeUp(0.5)}
                   initial="hidden"
                   animate={inView ? "visible" : "hidden"}
@@ -263,7 +263,7 @@ function HomeHero() {
                       Data-driven results
                     </p>
                   </div>
-                </motion.div>
+                </motion.div> */}
               </motion.div>
             </div>
           </div>
