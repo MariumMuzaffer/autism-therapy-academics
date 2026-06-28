@@ -5,6 +5,7 @@ import { ChevronDown } from "@/constants";
 import { CONTACT_CARDS, FAQS } from "@/constants";
 import ContactForm from "@/components/ContactForm";
 import Image from "next/image";
+import Link from "next/link";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Animation variants
@@ -157,7 +158,7 @@ function ContactHero() {
 
             {/* Contact cards */}
             <div className="grid w-full grid-cols-1 gap-5 sm:grid-cols-3">
-              {CONTACT_CARDS.map(({ Icon, label, value }, i) => (
+              {CONTACT_CARDS.map(({ Icon, label, value, href }, i) => (
                 <motion.div
                   key={label}
                   variants={fadeUp(0.42 + i * 0.1)}
@@ -167,7 +168,9 @@ function ContactHero() {
                   className="flex flex-col items-center rounded-2xl border border-[#e3e9f3] bg-white px-6 py-9 text-center"
                 >
                   <span className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#0597F2]/10">
-                    <Icon size={22} color="#0597F2" strokeWidth={1.8} />
+                    <Link href={href}>
+                      <Icon size={22} color="#0597F2" strokeWidth={1.8} />
+                    </Link>
                   </span>
                   <p className="font-['Poppins'] mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#6b7d9c]">
                     {label}

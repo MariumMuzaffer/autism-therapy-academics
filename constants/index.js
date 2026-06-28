@@ -251,16 +251,19 @@ const CONTACT_CARDS = [
     Icon: Mail,
     label: "Email Us",
     value: "info@ata-org.com",
+    href: "mailto:info@ata-org.com"
   },
   {
     Icon: Phone,
     label: "Call Us",
     value: "331-332-0712",
+    href: "tel:+13313320712"
   },
   {
     Icon: Clock,
     label: "Ages Accepted",
     value: "18 months – 14 years",
+    href: "#"
   },
 ];
 
